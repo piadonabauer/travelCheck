@@ -1,4 +1,4 @@
-# travelCheck
+# TravelCHECK
 _TravelCheck ermöglicht eine effiziente Buchung für Ihren nächsten Urlaub. Die benutzerfreundliche Oberfläche führt Sie mit wenigen Klicks zu den Suchergebnissen._
 
 Sie können verschiedene Urlaubsarten buchen: Entweder eine Pauschalreise mit Flug oder Bahn oder nur ein Hotel. Es können verschiedene Komponenten angegeben werden, wie die Zieldestination, die Personenanzahl, der Startort und das genaue Reisedatum.
