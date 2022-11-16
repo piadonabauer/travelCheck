@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/picture_top"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+        android:src="@drawable/background_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_info"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#CCFFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/picture_top"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/worksans_light"
+
+            android:text="Berlin"
+            android:textColorLink="@color/black"
+            android:textSize="30sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_filter_alt_24"
+        app:backgroundTint="#3CA8D3"
+        app:layout_constraintBottom_toBottomOf="@+id/picture_top"
+        app:layout_constraintRight_toLeftOf="@+id/card_info" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/data_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-7dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

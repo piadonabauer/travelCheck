@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="410dp"
+    android:background="@color/white"
+    android:backgroundTint="#CCFFFFFF"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp"
+    tools:context=".start.fragments.BahnHotelFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:ems="15"
+            android:fontFamily="@font/worksans_light"
+            android:hint="Reiseziel"
+
+            android:inputType="text"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorLink="@color/black"
+
+            android:textSize="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/location_asset"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/location_asset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_baseline_room_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/date_asset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_date_range_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="?android:spinnerStyle"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/worksans_light"
+            android:onClick="openDatePicker"
+            android:text="01.01.2020"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/date_asset"
+            app:layout_constraintTop_toBottomOf="@id/city" />
+
+        <Button
+            android:id="@+id/datePickerButton2"
+            style="?android:spinnerStyle"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:fontFamily="@font/worksans_light"
+            android:hint="Abfahrt"
+            android:inputType="date"
+            android:text="07.01.2020"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city" />
+
+        <ImageView
+            android:id="@+id/person_asset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/datePickerButton" />
+
+        <EditText
+            android:id="@+id/numAdults"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/worksans_light"
+            android:hint="Erwachsene"
+            android:inputType="number"
+            android:textColorLink="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toRightOf="@id/person_asset"
+            app:layout_constraintTop_toBottomOf="@+id/datePickerButton" />
+
+        <EditText
+            android:id="@+id/numKids"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/worksans_light"
+            android:hint="Kinder"
+            android:inputType="number"
+            android:textColorLink="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePickerButton" />
+
+        <ImageView
+            android:id="@+id/train_asset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_train_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numAdults" />
+
+        <EditText
+            android:id="@+id/trainstation_place"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/worksans_light"
+            android:hint="Abfahrtsort"
+            android:textColorLink="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toRightOf="@id/person_asset"
+            app:layout_constraintTop_toBottomOf="@+id/numAdults" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startSearchButton"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#0051CB"
+            android:fontFamily="@font/worksans_light"
+            android:gravity="center"
+            android:text="Suche starten"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

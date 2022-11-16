@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_add_location_24.xml" value="0.105" />
+        <entry key="app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_local_airport_24.xml" value="0.132" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19572296142578122" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.1046875" />
+        <entry key="app/src/main/res/layout/fragment_bahn_hotel.xml" value="0.2610062893081761" />
+        <entry key="app/src/main/res/layout/fragment_filter.xml" value="0.194598388671875" />
+        <entry key="app/src/main/res/layout/fragment_flug_hotel.xml" value="0.21723388671875" />
+        <entry key="app/src/main/res/layout/fragment_hotel.xml" value="0.20588235294117646" />
+        <entry key="app/src/main/res/layout/item_view.xml" value="0.2764653523763021" />
+        <entry key="app/src/main/res/layout/loading_card.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/results.xml" value="0.19562225341796877" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
